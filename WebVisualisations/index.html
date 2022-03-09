@@ -11,9 +11,10 @@
         <title>Web Visualisation</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Brand</a>
+                <a class="navbar-brand" href="#">Latitude</a>
                 <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
@@ -24,7 +25,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav" style="margin-left: auto">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -44,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Comparisons</li>
+                            <a class="nav-link" href="#">Comparisons</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Data</a>
@@ -53,7 +54,49 @@
                 </div>    
             </div>
         </nav>
-        
+        <!-- Content -->
+        <div class="container">
+            <div class="row" style="
+            margin-top: 50px">
+                <div class="col-lg-8">
+                    <div class="page-header">
+                        <h2>Summary: Latitude vs. X</h2>
+                        <hr class="solid">
+                    </div>
+                    <div>
+                        <img src="visualisations/Fig1.png" class="rounded float-start" style="
+                        width: 50%">
+                        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
+                        To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
+                        This site provides the source data and visualisations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="page-header">
+                        <h2>Visualisations</h2>
+                        <hr class="solid">
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="visualisations/Fig2.png" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="visualisations/Fig2.png" class="img-thumbnail" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="visualisations/Fig3.png" class="img-thumbnail" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img src="visualisations/Fig4.png" class="img-thumbnail" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
             
 
